@@ -1,7 +1,7 @@
 import Temporario from "./style"
 
  const About = () => (
-   <Temporario>oie</Temporario>
+   <Temporario>Text</Temporario>
  )
 
  export default About
