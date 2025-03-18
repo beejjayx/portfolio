@@ -1,12 +1,12 @@
-import About from './components/About';
-import Header from './components/Header';
-import Presentation from './components/Presentation';
-import { BodyContainer, GlobalStyle } from './styles';
+import About from './components/About'
+import Header from './components/Header'
+import Presentation from './components/Presentation'
+import { BodyContainer, GlobalStyle } from './styles'
 
 function App() {
   return (
-    <> 
-    <GlobalStyle />
+    <>
+      <GlobalStyle />
       <Header />
       <BodyContainer>
         <Presentation />
@@ -16,4 +16,4 @@ function App() {
   )
 }
 
-export default App;
+export default App

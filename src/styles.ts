@@ -1,8 +1,8 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from 'styled-components'
 
 export const colors = {
-    white: '#fff',
-    background: '#14213d'
+  white: '#fff',
+  background: '#14213d'
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     `
 
 export const BodyContainer = styled.div`
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
-    `
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+`
