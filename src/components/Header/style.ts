@@ -4,17 +4,26 @@ import { colors } from '../../styles'
 const HeaderBar = styled.div`
   height: 80px;
   display: flex;
-  top: 0;
-  position: sticky;
   background-color: rgb(20, 33, 61, 0.5);
   backdrop-filter: blur(10px);
   box-shadow: none;
-  z-index: 1;
-  transition: all 0.2s ease-in-out;
+  z-index: 10;
+  transition: all 0.2s ease-in;
 
-  &.scrolled {
-    height: 70px;
-    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);
+  &.scrolled-up {
+    top: 0;
+    position: sticky;
+    box-shadow: 0px 3px 4px rgb(15, 24, 46);
+  }
+
+  &.scrolled-down {
+    position: sticky;
+    top: -80px;
+  }
+  
+  &.at-top {  
+    box-shadow: none;
+
   }
 
   img {
