@@ -6,12 +6,13 @@ const Background = styled.div`
   position: relative;
 
   h1 {
-  position: relative;
-  top: 15vh;
-  left: 0;
-  font-size: 160px;
-  font-family: "Bebas Neue", sans-serif;
-  z-index: 1;
+    position: relative;
+  text-align: center;
+    top: 15vh;
+    left: 0;
+    font-size: 160px;
+    font-family: "Bebas Neue", sans-serif;
+    z-index: 1;
   }
 `
 
@@ -19,7 +20,7 @@ export const Content = styled.div`
   position: absolute;
   width:  500px;
   top: 38vh;
-  right: 10vh;
+  right: 0;
   z-index: 2;
 
   div {

@@ -1,4 +1,4 @@
-import { Click } from './styles'
+import { Click } from './style'
 
 // in Presentation
 

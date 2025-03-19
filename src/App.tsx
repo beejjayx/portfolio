@@ -1,6 +1,7 @@
 import About from './components/About'
 import Header from './components/Header'
 import Presentation from './components/Presentation'
+import Projects from './components/Projects'
 import { BodyContainer, GlobalStyle } from './styles'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Presentation />
         <About />
       </BodyContainer>
+      <Projects />
     </>
   )
 }

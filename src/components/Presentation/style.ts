@@ -22,7 +22,7 @@ const Text = styled.div`
 export const Box = styled.div`
   display: flex;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
 `
 
 export default Text
