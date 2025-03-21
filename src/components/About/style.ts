@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Background = styled.div`
+const AboutSection = styled.section`
   width: 100%;
   height: 100vh;  
   position: relative;
@@ -42,4 +42,4 @@ export const Content = styled.div`
 
   `
 
-export default Background
+export default AboutSection

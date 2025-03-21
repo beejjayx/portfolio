@@ -1,7 +1,7 @@
-import Background, { Content } from './style'
+import AboutSection, { Content } from './style'
 
 const About = () => (
-  <Background>
+  <AboutSection>
     <h1>O QUE TENHO FEITO</h1>
     <Content>
       <p>
@@ -33,6 +33,6 @@ const About = () => (
         </ul>
       </div>
     </Content>
-  </Background>
+  </AboutSection>
 )
 export default About

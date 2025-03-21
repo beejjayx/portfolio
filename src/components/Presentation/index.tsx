@@ -1,8 +1,8 @@
 import ButtonOpenPDF from '../Button'
-import Text, { Box } from './style'
+import Text, { PSection } from './style'
 
 const Presentation = () => (
-  <Box>
+  <PSection>
     <Text>
       <p>Olá, meu nome é</p>
       <h1>BENJI D'EL REI</h1>
@@ -14,7 +14,7 @@ const Presentation = () => (
       </p>
       <ButtonOpenPDF />
     </Text>
-  </Box>
+  </PSection>
 )
 
 export default Presentation

@@ -19,7 +19,7 @@ const Text = styled.div`
   }
 `
 
-export const Box = styled.div`
+export const PSection = styled.section`
   display: flex;
   align-items: center;
   height: 100vh;
