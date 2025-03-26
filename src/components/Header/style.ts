@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { colors, slideRight } from '../../styles'
 
 const HeaderBar = styled.div`
   height: 80px;
@@ -38,6 +38,21 @@ export const Menu = styled.nav`
   width: 100%;
   margin-right: 50px;
 
+  .text-animation {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: ${slideRight} 1s ease-in forwards;
+  }
+
+  .text-animation:nth-child(2){
+    animation-delay: 0.2s;
+  }
+
+  .text-animation:nth-child(1){
+    animation-delay: 0.5s;
+  }
+
+
   ul {
     display: flex;
     list-style: none;
@@ -49,8 +64,8 @@ export const Menu = styled.nav`
         text-decoration: none;
         color: ${colors.white};
       }
-    }
   }
+}
 `
 
 export default HeaderBar

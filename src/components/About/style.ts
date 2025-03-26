@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { fadeDown } from '../../styles'
 
 const AboutSection = styled.section`
   width: 100%;
@@ -7,13 +8,14 @@ const AboutSection = styled.section`
 
   h1 {
     position: relative;
-  text-align: center;
+    text-align: center;
     top: 15vh;
     left: 0;
     font-size: 160px;
     font-family: "Bebas Neue", sans-serif;
     z-index: 1;
   }
+
 `
 
 export const Content = styled.div`

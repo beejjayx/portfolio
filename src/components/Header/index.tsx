@@ -34,13 +34,13 @@ const Header = () => {
       <img src={logo} alt="logo temporaria" />
       <Menu>
         <ul>
-          <li>
+          <li className="text-animation">
             <a href="#">Sobre mim</a>
           </li>
-          <li>
+          <li className="text-animation">
             <a href="#">Projetos</a>
           </li>
-          <li>
+          <li className="text-animation">
             <a href="#">Contato</a>
           </li>
         </ul>

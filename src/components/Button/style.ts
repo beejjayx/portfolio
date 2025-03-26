@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { colors, fadeDown } from '../../styles'
 
 export const Click = styled.button`
   margin-top: 70px;
@@ -11,4 +11,5 @@ export const Click = styled.button`
   font-family: 'Coda', system-ui;
   font-size: 16px;
   cursor: pointer;
+  animation: ${fadeDown} 1.5s ease-in;
 `

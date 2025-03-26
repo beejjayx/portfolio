@@ -4,10 +4,10 @@ import Text, { PSection } from './style'
 const Presentation = () => (
   <PSection>
     <Text>
-      <p>Olá, meu nome é</p>
-      <h1>BENJI D'EL REI</h1>
-      <h2>Desenvolvedor Full Stack Java</h2>
-      <p>
+      <p className="text-animation">Olá, meu nome é</p>
+      <h1 className="text-animation">BENJI D'EL REI</h1>
+      <h2 className="text-animation">Desenvolvedor Full Stack Java</h2>
+      <p className="text-animation">
         Programador com sólida formação e experiência em desenvolvimento Full
         Stack Java especialista em Web Design além de criação de APIs e
         integração Front e Back-end.

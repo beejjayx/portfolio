@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle, keyframes } from 'styled-components'
 
 export const colors = {
   white: '#fff',
@@ -27,4 +27,21 @@ export const BodyContainer = styled.div`
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
+`
+
+export const fadeDown = keyframes`
+  from {                       
+    opacity: 0;                 
+    transform: translateY(-20px); 
+  } to {                          
+    opacity: 1;                   
+    transform: translateY(0);     
+`
+export const slideRight = keyframes`
+  from {                       
+    opacity: 0;                 
+    transform: translateX(-50px); 
+  } to {                          
+    opacity: 1;                   
+    transform: translateX(0);     
 `
