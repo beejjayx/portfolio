@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { fadeDown } from '../../styles'
+import { colors } from '../../styles'
 
 const AboutSection = styled.section`
   width: 100%;
@@ -16,6 +16,50 @@ const AboutSection = styled.section`
     z-index: 1;
   }
 
+  
+
+`
+
+export const Deck = styled.div`
+  position: relative;
+  width: 330px;
+  perspective: 1000px;
+  background-color: ${colors.orange};
+
+  .card {
+    width: 100%;
+    position: absolute;
+    transition: transform 0.6s ease, z-index 0.3s;
+    
+  }
+
+  .card-1 {
+    top: 15vh;
+    left: 15vh;
+  }
+
+  .card-2 {
+    top: 15vh;
+    left: 2vh;
+    cursor: pointer;
+  }
+    
+  .card:nth-child(1) {
+    z-index: 2;
+  }
+
+  .card:nth-child(2) {
+    z-index: 1;
+  }
+
+  .card:nth-child(2):hover {
+    z-index: 2;
+    transform: translateY(-10px) translateX(30px);
+  }
+
+  img {
+    width: 100%;
+  }
 `
 
 export const Content = styled.div`
@@ -41,7 +85,7 @@ export const Content = styled.div`
     list-style: circle;
   
   }
+`
 
-  `
 
 export default AboutSection

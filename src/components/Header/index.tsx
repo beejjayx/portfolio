@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
-import logo from '../../assets/images/flower.png'
-import HeaderBar from './style'
-import { Menu } from './style'
+
+import HeaderBar from './styles'
+import { Menu } from './styles'
+
+import logo from '../../assets/images/logo.png'
 
 const Header = () => {
   const [scrollState, setScrollState] = useState({
@@ -35,13 +37,24 @@ const Header = () => {
       <Menu>
         <ul>
           <li className="text-animation">
-            <a href="#">Sobre mim</a>
+            <a className="link" href="#">
+              Home
+            </a>
           </li>
           <li className="text-animation">
-            <a href="#">Projetos</a>
+            <a className="link" href="#">
+              Sobre mim
+            </a>
           </li>
           <li className="text-animation">
-            <a href="#">Contato</a>
+            <a className="link" href="#">
+              Projetos
+            </a>
+          </li>
+          <li className="text-animation">
+            <a className="link" href="#">
+              Contato
+            </a>
           </li>
         </ul>
       </Menu>

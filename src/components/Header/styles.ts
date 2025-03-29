@@ -28,6 +28,7 @@ const HeaderBar = styled.div`
 
   img {
     height: 80px;
+    margin-left: 10px;
     width: 90px;
   }
 `
@@ -37,6 +38,7 @@ export const Menu = styled.nav`
   justify-content: flex-end;
   width: 100%;
   margin-right: 50px;
+
 
   .text-animation {
     opacity: 0;
@@ -63,6 +65,19 @@ export const Menu = styled.nav`
       a {
         text-decoration: none;
         color: ${colors.white};
+      }
+
+      .link:after {
+        content: '';
+        width: 0;
+        background-color: ${colors.orange};
+        display: block;
+        height: 3px;
+        transition: width 0.3s ease;
+      }
+
+      .link:hover::after {
+        width: 100%;
       }
   }
 }

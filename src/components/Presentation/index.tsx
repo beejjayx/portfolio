@@ -1,5 +1,5 @@
 import ButtonOpenPDF from '../Button'
-import Text, { PSection } from './style'
+import Text, { PSection } from './styles'
 
 const Presentation = () => (
   <PSection>

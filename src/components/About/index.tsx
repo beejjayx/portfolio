@@ -1,7 +1,11 @@
 import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import AboutSection, { Content } from './style'
+
+import AboutSection, { Content, Deck } from './styles'
+
+import photo from '../../assets/images/photo.png'
+import selfportrait from '../../assets/images/selfportrait.png'
 
 const About = () => {
   useEffect(() => {
@@ -11,6 +15,19 @@ const About = () => {
   return (
     <AboutSection>
       <h1 data-aos="fade-down">O QUE TENHO FEITO</h1>
+      <Deck>
+        <div className="card card-1">
+          <img
+            data-aos="fade-left"
+            data-aos-delay="400"
+            src={photo}
+            alt="card-1"
+          />
+        </div>
+        <div className="card card-2">
+          <img data-aos="fade-left" src={selfportrait} alt="card-2" />
+        </div>
+      </Deck>
       <Content>
         <p data-aos="fade-left" data-aos-delay="500">
           Olá! Meu nome é Benji, tenho 26 anos e eu crio arte para web 😊.

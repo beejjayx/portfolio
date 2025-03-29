@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import DisplayGrid, { Grid } from './style'
+import DisplayGrid, { Grid } from './styles'
 
 import efood from '../../assets/images/efood.png'
 import pandora from '../../assets/images/pandora.png'
