@@ -16,7 +16,7 @@ const Projects = () => {
 
   return (
     <>
-      <DisplayGrid>
+      <DisplayGrid id="projects">
         <h1 data-aos="fade-down">Alguns de meus projetos:</h1>
         <div className="gridbox">
           <Grid>

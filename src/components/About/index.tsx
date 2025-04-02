@@ -13,7 +13,7 @@ const About = () => {
   }, [])
 
   return (
-    <AboutSection>
+    <AboutSection id="about">
       <h1 data-aos="fade-down">O QUE TENHO FEITO</h1>
       <Deck>
         <div className="card card-1">

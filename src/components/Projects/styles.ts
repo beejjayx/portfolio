@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../styles";
+import { breakpoints, colors } from "../../styles";
 
 const DisplayGrid = styled.section`
     text-align: center;
@@ -11,6 +11,10 @@ const DisplayGrid = styled.section`
         top: 15vh;
         font-weight: 2; 
         font-size: 26px;
+
+        @media (max-width: ${breakpoints.desktop}) {
+            top: 15vh;
+        }
     }
 
     .gridbox {
@@ -19,6 +23,12 @@ const DisplayGrid = styled.section`
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+
+    @media (max-width: ${breakpoints.tablet}) {
+        margin-top: 25em;
+        margin-bottom: 25em;
+        height: 150vh;
     }
 `
 
@@ -110,7 +120,15 @@ export const Grid = styled.div`
     &:hover .overlay {
         opacity: 0;
     }
+
+    @media (max-width: ${breakpoints.desktop}) {
+        margin-bottom: 10em;
+    }
 }
+
+    @media (max-width: ${breakpoints.desktop}) {
+        grid-template-columns: 1fr;
+    }
 `
 
 export default DisplayGrid

@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { colors } from "../../styles";
+import { breakpoints, colors } from "../../styles";
 
 const ContactInfo = styled.section`
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     text-align: center;
     align-items: center;
 
@@ -16,6 +16,10 @@ const ContactInfo = styled.section`
         h1 {
             font-size: 40px;
             margin-bottom: 20px; 
+        } 
+
+        @media (max-width: ${breakpoints.desktop}) {
+            width: 80%;
         }
     }
 
@@ -100,6 +104,11 @@ const ContactInfo = styled.section`
             box-shadow: 0px 0px 20px rgb(211, 121, 61);
             border-radius: 50%;
         }
+    }
+
+    @media (max-width: ${breakpoints.desktop}) {
+        width: 100%;
+        margin-top: 25vh;
     }
 `
 

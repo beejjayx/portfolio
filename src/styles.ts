@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle, keyframes } from 'styled-components'
+import { createGlobalStyle, keyframes } from 'styled-components'
 
 export const colors = {
   white: '#fff',
@@ -8,6 +8,12 @@ export const colors = {
   orange: '#ee6c4d',
   ice: '#e0fbfc',
 }
+
+export const breakpoints = {
+  desktop: '1024px',
+  tablet: '768px'
+}
+
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -21,12 +27,19 @@ export const GlobalStyle = createGlobalStyle`
         background-color: ${colors.background};
         color: ${colors.white};
     }
-    `
 
-export const BodyContainer = styled.div`
-  max-width: 1024px;
-  width: 100%;
-  margin: 0 auto;
+    .container {
+      max-width: 1024px;
+      width: 100%;
+      margin: 0 auto;
+
+      @media (max-width: ${breakpoints.desktop}) {
+        width: 90%;
+    }
+      @media (max-width: ${breakpoints.tablet}) {
+        width: 90%;
+      }
+  }
 `
 
 export const fadeDown = keyframes`

@@ -1,8 +1,8 @@
 import ButtonOpenPDF from '../Button'
 import Text, { PSection } from './styles'
 
-const Presentation = () => (
-  <PSection>
+const Home = () => (
+  <PSection id="home">
     <Text>
       <p className="text-animation">Olá, meu nome é</p>
       <h1 className="text-animation">BENJI D'EL REI</h1>
@@ -17,4 +17,4 @@ const Presentation = () => (
   </PSection>
 )
 
-export default Presentation
+export default Home

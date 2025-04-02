@@ -1,5 +1,12 @@
 import styled from 'styled-components'
-import { fadeDown } from '../../styles'
+import { breakpoints, fadeDown } from '../../styles'
+
+
+export const PSection = styled.section`
+  display: flex;
+  align-items: center;
+  height: 100vh;
+`
 
 const Text = styled.div`
   display: block;
@@ -19,6 +26,11 @@ const Text = styled.div`
   p {
     width: 60vh;
     margin-left: 3px;
+    
+
+    @media (max-width: ${breakpoints.tablet}) {
+      width: 100%;
+    }
   }
 
   .text-animation {
@@ -43,13 +55,10 @@ const Text = styled.div`
     animation-delay: 1.6s;
   }
 }
-`
 
-export const PSection = styled.section`
-  display: flex;
-  align-items: center;
-  height: 100vh;
+
 
 `
+
 
 export default Text

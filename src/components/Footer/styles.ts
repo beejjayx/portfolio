@@ -7,8 +7,9 @@ const Info = styled.div`
     width: 250px;
     margin-bottom: 20px;
 
-    p {
+    a {
         font-family: segoe ui;
+        text-decoration: none;
         font-size: 12px;
         font-weight: 400;
         letter-spacing: 1px;

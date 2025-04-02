@@ -11,7 +11,7 @@ const Contact = () => {
 
   // data-aos="fade-down"
   return (
-    <ContactInfo>
+    <ContactInfo id="contact">
       <div>
         <h1>Me mande uma mensagem!</h1>
         <p>
