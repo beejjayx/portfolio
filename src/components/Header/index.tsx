@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-scroll'
 
-import HeaderBar, { Hamburguer, Menu, NavMobile } from './styles'
+import HeaderBar, { Menu, NavMobile } from './styles'
 
 import logo from '../../assets/images/logo.png'
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false)
+  //Efeito de scroll do header
   const [scrollState, setScrollState] = useState({
     scrolledUp: false,
     atTop: true,
@@ -37,6 +37,7 @@ const Header = () => {
       <Link to="home" smooth={true} duration={500}>
         <img src={logo} alt="logo" />
       </Link>
+
       <Menu>
         <ul>
           <li className="text-animation">
@@ -63,8 +64,10 @@ const Header = () => {
       </Menu>
 
       {/* HAMBURGUER MENU */}
-      <NavMobile className={menuOpen ? 'is-open' : ''}>
-        <ul>
+      <NavMobile className="nav-mobile">
+        <input type="checkbox" id="toggle" />
+        <label className="toggle-container" htmlFor="toggle"></label>
+        <ul className="nav-link">
           <li className="text-animation">
             <Link className="link" to="home" smooth={true} duration={500}>
               Home
@@ -87,13 +90,6 @@ const Header = () => {
           </li>
         </ul>
       </NavMobile>
-
-      <Hamburguer onClick={() => setMenuOpen(!menuOpen)}>
-        <span />
-        <span />
-        <span />
-        <span />
-      </Hamburguer>
     </HeaderBar>
   )
 }

@@ -18,7 +18,7 @@ const ContactInfo = styled.section`
             margin-bottom: 20px; 
         } 
 
-        @media (max-width: ${breakpoints.desktop}) {
+        @media (max-width: ${breakpoints.tablet}) {
             width: 80%;
         }
     }
@@ -106,9 +106,14 @@ const ContactInfo = styled.section`
         }
     }
 
-    @media (max-width: ${breakpoints.desktop}) {
+    @media (max-width: ${breakpoints.tablet}) {
         width: 100%;
-        margin-top: 25vh;
+        margin-top: 10em;
+    }
+        
+    @media (max-width: ${breakpoints.mobile}) {
+        width: 100%;
+        margin-top: 0;
     }
 `
 

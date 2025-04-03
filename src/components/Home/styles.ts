@@ -28,7 +28,7 @@ const Text = styled.div`
     margin-left: 3px;
     
 
-    @media (max-width: ${breakpoints.tablet}) {
+    @media (max-width: ${breakpoints.mobile}) {
       width: 100%;
     }
   }

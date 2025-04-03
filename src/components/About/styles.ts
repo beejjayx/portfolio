@@ -7,7 +7,7 @@ const AboutSection = styled.section`
   position: relative;
 
   h1 {
-    position: relative;
+    position: absolute;
     text-align: center;
     top: 15vh;
     left: 0;
@@ -15,20 +15,27 @@ const AboutSection = styled.section`
     font-family: "Bebas Neue", sans-serif;
     z-index: 1;
 
-    @media (max-width: ${breakpoints.desktop}) {
+    @media (max-width: ${breakpoints.tablet}) {
       font-size: 110px;
       text-align: right;
       width: 60%;
-      left: 20vh;
-      top: 22vh;
+      left: 2em;
       text-shadow: 2px 2px 4px rgba(8, 13, 83, 0.6);
+      z-index: 2;
     }
 
-    @media (max-width: ${breakpoints.tablet}) {
-      font-size: 100px;
-      top: 15vh;
-      left: 10vh;
+    @media (max-width: ${breakpoints.mobile}) {
+      font-size: 110px;
+      font-weight: 100;
+      width: 100%;
+      left: 0;
     }
+
+    @media (min-width: 471px) and (max-width: 768px) {
+      width: 60%;
+      left: 2em;
+      }
+
   }
 `
 
@@ -36,7 +43,6 @@ export const Deck = styled.div`
   position: relative;
   width: 330px;
   perspective: 1000px;
-  background-color: ${colors.orange};
 
   .card {
     width: 100%;
@@ -45,32 +51,32 @@ export const Deck = styled.div`
   }
 
   .card-1 {
-    top: 15vh;
+    top: 20em;
     left: 15vh;
     
-    @media (max-width: ${breakpoints.desktop}) {
-      top: -15vh;
+    @media (max-width: ${breakpoints.tablet}) {
+      top: 0;
       left: 10vh;
     }
 
-    @media (max-width: ${breakpoints.tablet}) {
-      top: -30vh;
-      left: 5vh;
+    @media (max-width: ${breakpoints.mobile}) {
+      top: 9em;
+      left: 3em;
     }
   }
 
   .card-2 {
-    top: 15vh;
+    top: 20em;
     left: 2vh;
     cursor: pointer;
 
-    @media (max-width: ${breakpoints.desktop}) {
-      top: -15vh;
+    @media (max-width: ${breakpoints.tablet}) {
+      top: 0;
       left: 2vh;
       }
 
-    @media (max-width: ${breakpoints.tablet}) {
-      top: -30vh;
+    @media (max-width: ${breakpoints.mobile}) {
+      top: 9em;
       left: -2vh;
     }
   }
@@ -91,11 +97,11 @@ export const Deck = styled.div`
   img {
     width: 100%;
 
-    @media (max-width: ${breakpoints.desktop}) {
+    @media (max-width: ${breakpoints.tablet}) {
       width: 80%;
     } 
 
-    @media (max-width: ${breakpoints.tablet}) {
+    @media (max-width: ${breakpoints.mobile}) {
       width: 70%;
     } 
   }
@@ -104,7 +110,7 @@ export const Deck = styled.div`
 export const Content = styled.div`
   position: absolute;
   width:  500px;
-  top: 38vh;
+  top: 30em;
   right: 0;
   z-index: 2;
 
@@ -122,16 +128,14 @@ export const Content = styled.div`
     list-style: circle;
   }
 
-  @media (max-width: ${breakpoints.desktop}) {
+  @media (max-width: ${breakpoints.tablet}) {
     color: ${colors.ice};
     width: 90%;
-    margin-top: 8em;
     margin-right: 20px;
   }
 
-    @media (max-width: ${breakpoints.tablet}) {
-      margin-top: 15em;
-      width: 85%;
+    @media (max-width: ${breakpoints.mobile}) {
+      margin-top: 5em;
     }
 `
 

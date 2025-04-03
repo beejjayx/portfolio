@@ -12,8 +12,8 @@ const DisplayGrid = styled.section`
         font-weight: 2; 
         font-size: 26px;
 
-        @media (max-width: ${breakpoints.desktop}) {
-            top: 15vh;
+        @media (max-width: ${breakpoints.tablet}) {
+            top: 0;
         }
     }
 
@@ -23,13 +23,18 @@ const DisplayGrid = styled.section`
         width: 100%;
         display: flex;
         justify-content: center;
+        
+        @media (max-width: ${breakpoints.tablet}) {
+            top: 0;
+        }
     }
 
-    @media (max-width: ${breakpoints.tablet}) {
-        margin-top: 25em;
-        margin-bottom: 25em;
-        height: 150vh;
+    @media (max-width: ${breakpoints.mobile}) {
+        margin-top: 30em;
+        margin-bottom: 30em;
     }
+
+
 `
 
 export const Grid = styled.div`
@@ -121,12 +126,13 @@ export const Grid = styled.div`
         opacity: 0;
     }
 
-    @media (max-width: ${breakpoints.desktop}) {
-        margin-bottom: 10em;
+    
+    @media (max-width: ${breakpoints.tablet}) {
+        margin-top: 10em;
     }
 }
 
-    @media (max-width: ${breakpoints.desktop}) {
+    @media (max-width: ${breakpoints.tablet}) {
         grid-template-columns: 1fr;
     }
 `
