@@ -115,6 +115,7 @@ const ContactInfo = styled.section`
     @media (max-width: ${breakpoints.mobile}) {
         width: 100%;
         height: 80vh;
+        margin-bottom: 20vh;
     }
 `
 
