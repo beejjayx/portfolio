@@ -114,6 +114,7 @@ export const Content = styled.div`
   top: 20em;
   right: 0;
   z-index: 2;
+      margin-bottom: 30px;
 
   div {
     display: flex;

@@ -102,7 +102,7 @@ export const NavMobile = styled.nav`
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    top: 6em;
+    top: 5em;
     left: 0;
     width: 100%;
     text-align: center;
@@ -136,8 +136,7 @@ export const NavMobile = styled.nav`
     border: 4px solid ${colors.ice};
     border-radius: 50%;
     height: 28px;
-    top: 16px;
-    left: 18px;
+    left: 20px;
     width: 28px;
     transform: rotate(-135deg);
       &::before {
@@ -198,7 +197,7 @@ label {
   display: block;
   height: 24px;
   position: absolute;
-  top: 18px;
+  top: 25px;
   left: 20px;
   width: 24px;
   transition: all .2s;
@@ -208,19 +207,19 @@ label {
     content: '';
     height: 4px;
     left: 0;
-    position
-    : absolute;
+    position: absolute;
     top: 6px;
-    width: 24px;
+    width: 30px;
     transition: all .2s;
   }
+
   &::after {
     background: coral;
     content: '';
     height: 4px;
     left: 0;
     position: absolute;
-    top: 6px;
+    top: 60px;
     opacity: 0;
     visibility: hidden;
     width: 100%;

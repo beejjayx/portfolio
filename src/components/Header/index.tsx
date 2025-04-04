@@ -64,32 +64,34 @@ const Header = () => {
       </Menu>
 
       {/* HAMBURGUER MENU */}
-      <NavMobile className="nav-mobile">
-        <input type="checkbox" id="toggle" />
-        <label className="toggle-container" htmlFor="toggle"></label>
-        <ul className="nav-link">
-          <li className="text-animation">
-            <Link className="link" to="home" smooth={true} duration={500}>
-              Home
-            </Link>
-          </li>
-          <li className="text-animation">
-            <Link className="link" to="about" smooth={true} duration={600}>
-              Sobre mim
-            </Link>
-          </li>
-          <li className="text-animation">
-            <Link className="link" to="projects" smooth={true} duration={700}>
-              Projetos
-            </Link>
-          </li>
-          <li className="text-animation">
-            <Link className="link" to="contact" smooth={true} duration={900}>
-              Contato
-            </Link>
-          </li>
-        </ul>
-      </NavMobile>
+      <div>
+        <NavMobile className="nav-mobile">
+          <input type="checkbox" id="toggle" />
+          <label className="toggle-container" htmlFor="toggle"></label>
+          <ul className="nav-link">
+            <li className="text-animation">
+              <Link className="link" to="home" smooth={true} duration={500}>
+                Home
+              </Link>
+            </li>
+            <li className="text-animation">
+              <Link className="link" to="about" smooth={true} duration={600}>
+                Sobre mim
+              </Link>
+            </li>
+            <li className="text-animation">
+              <Link className="link" to="projects" smooth={true} duration={700}>
+                Projetos
+              </Link>
+            </li>
+            <li className="text-animation">
+              <Link className="link" to="contact" smooth={true} duration={900}>
+                Contato
+              </Link>
+            </li>
+          </ul>
+        </NavMobile>
+      </div>
     </HeaderBar>
   )
 }

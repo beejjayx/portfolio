@@ -3,6 +3,7 @@ import { breakpoints, fadeDown } from '../../styles'
 
 
 export const PSection = styled.section`
+  margin-top: 20px;
   display: flex;
   align-items: center;
   height: 100vh;

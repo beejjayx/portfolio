@@ -20,6 +20,7 @@ const ContactInfo = styled.section`
 
         @media (max-width: ${breakpoints.tablet}) {
             width: 80%;
+            margin-top: 15vh; 
         }
     }
 
@@ -113,7 +114,7 @@ const ContactInfo = styled.section`
         
     @media (max-width: ${breakpoints.mobile}) {
         width: 100%;
-        margin-top: 0;
+        height: 80vh;
     }
 `
 
