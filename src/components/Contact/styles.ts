@@ -56,7 +56,6 @@ const ContactInfo = styled.section`
         color: ${colors.white};
     }
 
-
     @keyframes rotate {
         0% {
             transform: rotate(0deg) translate3d(0, 0, 0);
@@ -111,7 +110,7 @@ const ContactInfo = styled.section`
         width: 100%;
         margin-top: 10em;
     }
-        
+
     @media (max-width: ${breakpoints.mobile}) {
         width: 100%;
         height: 80vh;

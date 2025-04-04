@@ -119,7 +119,7 @@ export const Content = styled.div`
   div {
     display: flex;
   }
-  
+
   p {
     margin-top: 20px;
   }
@@ -133,11 +133,12 @@ export const Content = styled.div`
   @media (max-width: ${breakpoints.tablet}) {
     color: ${colors.ice};
     width: 90%;
+    top: 30em;
     margin-right: 20px;
   }
 
   @media (max-width: ${breakpoints.mobile}) {
-    margin-top: 15em;
+    margin-top: 5em;
   }
 `
 
