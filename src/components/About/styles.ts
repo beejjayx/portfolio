@@ -5,6 +5,7 @@ const AboutSection = styled.section`
   width: 100%;
   height: 100vh;  
   position: relative;
+  margin-bottom: 20vh;
 
   h1 {
     position: absolute;
@@ -56,12 +57,12 @@ export const Deck = styled.div`
     
     @media (max-width: ${breakpoints.tablet}) {
       top: 0;
-      left: 10vh;
+      left: 10em;
     }
 
     @media (max-width: ${breakpoints.mobile}) {
-      top: 9em;
-      left: 3em;
+      top: 10em;
+      left: 4em;
     }
   }
 
@@ -76,8 +77,8 @@ export const Deck = styled.div`
       }
 
     @media (max-width: ${breakpoints.mobile}) {
-      top: 9em;
-      left: -2vh;
+      top: 10em;
+      left: 0em;
     }
   }
 
@@ -110,7 +111,7 @@ export const Deck = styled.div`
 export const Content = styled.div`
   position: absolute;
   width:  500px;
-  top: 30em;
+  top: 20em;
   right: 0;
   z-index: 2;
 
@@ -134,9 +135,9 @@ export const Content = styled.div`
     margin-right: 20px;
   }
 
-    @media (max-width: ${breakpoints.mobile}) {
-      margin-top: 5em;
-    }
+  @media (max-width: ${breakpoints.mobile}) {
+    margin-top: 15em;
+  }
 `
 
 

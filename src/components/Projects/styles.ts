@@ -31,7 +31,7 @@ const DisplayGrid = styled.section`
 
     @media (max-width: ${breakpoints.mobile}) {
         margin-top: 30em;
-        margin-bottom: 30em;
+        margin-bottom: 40em;
     }
 
 
